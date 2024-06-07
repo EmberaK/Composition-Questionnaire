@@ -1,0 +1,117 @@
+@import url(./reset.css);
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.layer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    background: rgba(50, 50, 100, 0.7);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 15px 80px 0px #28285680;
+    padding: 30px;
+    width: 590px;
+    background-color: #F5F5FA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-box-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-box-main-heading{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text; /* Стандартный синтаксис */
+    color: transparent;
+}
+
+.form-box-main-close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: rgba(245, 245, 250, 1);
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-forms{
+    width: 558px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.input-forms,
+.input-forms::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(179, 179, 186, 1);
+}
+
+.input-forms:focus{
+    border: 1px solid rgba(255, 255, 255, 1);
+    outline: none; /* Убираем стандартный контур фокуса, чтобы применился border */
+}
+
+
+.name-forms,
+.tel-forms,
+.email-forms{
+    height: 24px;
+}
+
+.message-forms{
+    height: 98px;
+}
+
+.form-box-heading-answer{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: rgba(179, 179, 186, 1);
+
+}
+
+
+.form-button-submit{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    padding: 18px 30px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(36, 163, 255, 1);
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+
+
+}
+
